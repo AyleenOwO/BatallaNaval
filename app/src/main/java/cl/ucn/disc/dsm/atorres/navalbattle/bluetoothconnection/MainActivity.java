@@ -1,13 +1,13 @@
 package cl.ucn.disc.dsm.atorres.navalbattle.bluetoothconnection;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ViewAnimator;
 
 import com.example.android.bluetoothchat.R;
 
+import androidx.fragment.app.FragmentTransaction;
 import cl.ucn.disc.dsm.atorres.navalbattle.common.activities.SampleActivityBase;
 import cl.ucn.disc.dsm.atorres.navalbattle.common.Logger.Log;
 import cl.ucn.disc.dsm.atorres.navalbattle.common.Logger.LogFragment;
@@ -16,7 +16,7 @@ import cl.ucn.disc.dsm.atorres.navalbattle.common.Logger.MessageOnlyLogFilter;
 
 /**
  * A simple launcher activity containing a summary sample description, sample log and a custom
- * {@link android.support.v4.app.Fragment} which can display a view.
+ * {@link "android.support.v4.app.Fragment"} which can display a view.
  * <p>
  * For devices with displays with a width of 720dp or greater, the sample log is always visible,
  * on other devices it's visibility is controlled by an item on the Action Bar.

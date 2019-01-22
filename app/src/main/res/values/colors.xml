@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#222A73</color>
+    <color name="colorPrimaryDark">#222A73</color>
+    <color name="colorAccent">#222A73</color>
+
+    <color name="colorHit">#B71C22</color>
+    <color name="colorMissed">#134074</color>
+    <color name="colorUnknown">#9197AE</color>
+    <color name="colorVacant">#006494</color>
+    <color name="colorOccupied">#E1E4F4</color>
+
+    <color name="colorMiddleBlue">#83D8DE</color>
+    <color name="colorPrussianBlue">#073C4E</color>
+    <color name="colorSanPatrickBlue">#222A73</color>
+    <color name="colorPearlWhite">#E8EAf6</color>
+
+
+</resources>

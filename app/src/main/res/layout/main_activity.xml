@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="cl.ucn.disc.dsm.atorres.navalbattle.game.activities.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPearlWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="Posiciona tus barcos tocando tu territorio"
+            android:textColor="@color/colorSanPatrickBlue" />
+
+        <Button
+            android:id="@+id/btn_initialize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSanPatrickBlue"
+            android:text="REINICIAR"
+            android:textColor="@color/colorPearlWhite" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPearlWhite"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_gv_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorSanPatrickBlue"
+                android:text="Tu territorio" />
+
+            <GridView
+                android:id="@+id/gv_one"
+                style="@style/StyleGridViewBoard"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_gv_one"></GridView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_gv_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorSanPatrickBlue"
+                android:text="Territorio enemigo" />
+
+            <GridView
+                android:id="@+id/gv_two"
+                style="@style/StyleGridViewBoard"></GridView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorSanPatrickBlue"
+                android:text="Simbología" />
+
+            <Button
+                style="@style/StyleButtonColor"
+                android:textColor="@color/colorSanPatrickBlue"
+                android:background="@color/colorVacant"
+                android:text="@string/grid_status_vacant" />
+
+            <Button
+                style="@style/StyleButtonColor"
+                android:textColor="@color/colorSanPatrickBlue"
+                android:background="@color/colorOccupied"
+                android:text="@string/grid_status_taken" />
+
+            <Button
+                style="@style/StyleButtonColor"
+                android:textColor="@color/colorSanPatrickBlue"
+                android:background="@color/colorUnknown"
+                android:text="desconocido" />
+
+            <Button
+                style="@style/StyleButtonColor"
+                android:textColor="@color/colorSanPatrickBlue"
+                android:background="@color/colorHit"
+                android:text="@string/grid_status_hit" />
+
+            <Button
+                style="@style/StyleButtonColor"
+                android:textColor="@color/colorSanPatrickBlue"
+                android:background="@color/colorMissed"
+                android:text="@string/grid_status_missed" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+

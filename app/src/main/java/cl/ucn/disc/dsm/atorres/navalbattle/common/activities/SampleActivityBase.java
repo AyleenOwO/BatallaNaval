@@ -17,8 +17,8 @@
 package cl.ucn.disc.dsm.atorres.navalbattle.common.activities;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 
+import androidx.fragment.app.FragmentActivity;
 import cl.ucn.disc.dsm.atorres.navalbattle.common.Logger.Log;
 import cl.ucn.disc.dsm.atorres.navalbattle.common.Logger.LogWrapper;
 
