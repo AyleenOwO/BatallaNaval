@@ -1,15 +1,15 @@
 package cl.ucn.disc.dsm.atorres.navalbattle.game.activities;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import com.example.android.bluetoothchat.R;
-
 import java.util.ArrayList;
 
 import androidx.appcompat.app.AppCompatActivity;
+import cl.ucn.disc.dsm.atorres.navalbattle.R;
 import cl.ucn.disc.dsm.atorres.navalbattle.game.Game;
 import cl.ucn.disc.dsm.atorres.navalbattle.game.adapters.BoardAdapter;
 
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Boton de reinicio
      */
-    private Button btnRestart;
+    private Button btnRestart, btnConnect;
 
     /**
      * Tableros
@@ -66,9 +66,12 @@ public class MainActivity extends AppCompatActivity {
     private void setFields() {
         tvMessage = findViewById(R.id.tv_message);
         btnRestart = findViewById(R.id.btn_initialize);
+        btnConnect =findViewById(R.id.btn_connect);
         gvBoard1 = findViewById(R.id.gv_one);
         gvBoard2 = findViewById(R.id.gv_two);
         boardAdapter1 = new BoardAdapter(this, new ArrayList<>());
         boardAdapter2 = new BoardAdapter(this, new ArrayList<>());
+
+        btnConnect.setVisibility(View.GONE);
     }
 }

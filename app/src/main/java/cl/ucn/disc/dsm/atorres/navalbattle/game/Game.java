@@ -78,7 +78,7 @@ public class Game {
     }
 
     /**
-     * Pasa las variables del MainActivity
+     * Pasa las variables del MultiplayerActivity
      */
     public void setFields(Context context, TextView textViewMessage,
                           Button buttonRestart, GridView gridViewBoard1, GridView gridViewBoard2,

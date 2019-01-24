@@ -16,9 +16,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.android.bluetoothchat.R;
-
-import cl.ucn.disc.dsm.atorres.navalbattle.common.Logger.Log;
+import cl.ucn.disc.dsm.atorres.navalbattle.R;
 
 import java.util.Set;
 
@@ -29,11 +27,6 @@ import java.util.Set;
  * Activity in the result Intent.
  */
 public class DeviceListActivity extends Activity {
-
-    /**
-     * Tag for Log
-     */
-    private static final String TAG = "DeviceListActivity";
 
     /**
      * Return Intent extra
@@ -73,8 +66,8 @@ public class DeviceListActivity extends Activity {
         // Initialize array adapters. One for already paired devices and
         // one for newly discovered devices
         ArrayAdapter<String> pairedDevicesArrayAdapter =
-                new ArrayAdapter<String>(this, R.layout.device_name);
-        mNewDevicesArrayAdapter = new ArrayAdapter<String>(this, R.layout.device_name);
+                new ArrayAdapter<>(this, R.layout.device_name);
+        mNewDevicesArrayAdapter = new ArrayAdapter<>(this, R.layout.device_name);
 
         // Find and set up the ListView for paired devices
         ListView pairedListView = (ListView) findViewById(R.id.paired_devices);
@@ -129,7 +122,6 @@ public class DeviceListActivity extends Activity {
      * Start device discover with the BluetoothAdapter
      */
     private void doDiscovery() {
-        Log.d(TAG, "doDiscovery()");
 
         // Indicate scanning in the title
         setProgressBarIndeterminateVisibility(true);

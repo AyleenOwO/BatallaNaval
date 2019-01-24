@@ -5,14 +5,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.android.bluetoothchat.R;
-
 import androidx.appcompat.app.AppCompatActivity;
+import cl.ucn.disc.dsm.atorres.navalbattle.R;
+import cl.ucn.disc.dsm.atorres.navalbattle.bluetoothconnection.DeviceListActivity;
+import cl.ucn.disc.dsm.atorres.navalbattle.bluetoothconnection.MultiplayerActivity;
 
 /**
  * Activity del menu principal
  */
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
+
+    // Intent request codes
+    private static final int REQUEST_CONNECT_DEVICE_SECURE = 1;
+    private static final int REQUEST_CONNECT_DEVICE_INSECURE = 2;
+    private static final int REQUEST_ENABLE_BT = 3;
 
     /**
      *  Botones del menu
@@ -50,6 +56,8 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btn_vs_player:
                 //TODO coneccion por bluetooth
+                intent = new Intent(this, MultiplayerActivity.class);
+                startActivity(intent);
                 break;
 
             case R.id.btn_rules:

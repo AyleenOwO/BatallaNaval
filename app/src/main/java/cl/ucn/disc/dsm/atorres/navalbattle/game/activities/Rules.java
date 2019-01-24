@@ -2,9 +2,8 @@ package cl.ucn.disc.dsm.atorres.navalbattle.game.activities;
 
 import android.os.Bundle;
 
-import com.example.android.bluetoothchat.R;
-
 import androidx.appcompat.app.AppCompatActivity;
+import cl.ucn.disc.dsm.atorres.navalbattle.R;
 
 /**
  * Activity del las reglas

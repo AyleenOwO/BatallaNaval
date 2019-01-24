@@ -10,11 +10,10 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.GridView;
 
-import com.example.android.bluetoothchat.R;
-
 import java.util.List;
 
 import androidx.core.content.ContextCompat;
+import cl.ucn.disc.dsm.atorres.navalbattle.R;
 import cl.ucn.disc.dsm.atorres.navalbattle.game.gameset.Grid;
 
 /**
